@@ -1,0 +1,12 @@
+.wrapper{
+    @apply m-auto w-[340px] sm:w-[400px] lg:w-[533px];
+}
+.heading {
+    @apply text-white font-bold text-xl lg:text-4xl mx-auto w-fit mt-[70px] mb-[50px] lg:mt-[60px] xl:mt-[180px] lg:mb-[121px]
+}
+.changeButton{
+    @apply text-[#A6A6A6] ml-auto mt-[9px] lg:mt-[17px] text-xs lg:text-lg
+}
+.button{
+    @apply bg-accent rounded-[20px] w-[150px] lg:w-[302px] h-[40px] sm:h-[54px] mx-auto font-medium lg:font-bold mt-[37px] text-sm lg:text-lg sm:w-[200px]
+}

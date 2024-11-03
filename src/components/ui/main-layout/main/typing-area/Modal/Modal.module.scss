@@ -1,0 +1,4 @@
+.overlay {
+  @apply fixed top-0 bottom-0 left-0 flex right-0 justify-center items-center z-[1000] animate-fade;
+  background-color: rgba(0, 0, 0, 0.2);
+}

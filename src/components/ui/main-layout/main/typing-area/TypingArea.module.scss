@@ -1,0 +1,15 @@
+.wrapper {
+  @apply bg-bgChat h-[100px] flex gap-6 justify-center mb-4;
+  .typingArea {
+    @apply xl:w-[55%] lg:w-[61%] duration-300 rounded-xl bg-secondary bg-opacity-70 my-auto flex flex-col ;
+    .input {
+      @apply h-[36px] my-auto w-[75%] lg:w-[83%] xl:w-[88%] ml-4 bg-transparent outline-none border-none xl:text-base lg:text-base text-sm;
+    }
+    > div {
+      @apply h-fit my-auto;
+    }
+  }
+  .send {
+    @apply h-[56px] w-[56px] rounded-full bg-secondary hover:bg-accent my-auto flex text-accent hover:text-white duration-300 cursor-pointer;
+  }
+}

@@ -1,0 +1,41 @@
+.checkboxCustom {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  appearance: none; /* Убирает стандартный вид чекбокса */
+  outline: none;
+}
+
+.checkboxCustom::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #525252; /* Акцентный цвет бордера */
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-radius: 3px; /* Если хочешь сделать углы более плавными */
+}
+
+.checkboxCustom:checked::before {
+  background-color: #8069ef; /* Акцентный цвет фона */
+}
+
+.checkboxCustom:checked::after {
+  content: '✓'; /* Галочка или другой символ */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: white;
+}
+
+.checkboxCustom:focus {
+  outline: none;
+  box-shadow: none; /* Убираем возможные тени от фокуса */
+  border:none
+}

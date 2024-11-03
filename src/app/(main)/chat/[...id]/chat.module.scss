@@ -1,0 +1,24 @@
+.wrapper {
+    @apply flex;
+    .main {
+      @apply w-full;
+    }
+    .mainShort {
+      width: calc(100% - 347px); /* Ширина для экранов по умолчанию */
+    }
+  
+    /* Для экранов lg */
+    @media (min-width: 1024px) {
+      .mainShort {
+        width: calc(100% - 347px); /* Ширина для экранов lg */
+      }
+    }
+  
+    /* Для экранов xl */
+    @media (min-width: 1280px) {
+      .mainShort {
+        width: calc(100% - 430px); /* Ширина для экранов xl */
+      }
+    }
+  }
+  

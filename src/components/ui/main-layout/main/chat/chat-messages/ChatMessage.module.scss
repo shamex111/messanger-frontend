@@ -1,0 +1,37 @@
+.wrapper {
+  @apply flex gap-3;
+  > .image {
+    @apply w-[30px] h-[30px] rounded-full mt-auto;
+  }
+  > .rightPart {
+    > .contentWrapper {
+      > .infoMessage {
+        @apply flex gap-3;
+      }
+      @apply bg-secondary rounded-bl-sm rounded-xl py-2 px-3 xl:max-w-[500px] lg:max-w-[400px] max-w-[270px];
+    }
+    > .userMessageBg {
+      @apply bg-accent ml-auto rounded-br-sm rounded-xl;
+      /* @apply ml-auto rounded-br-sm rounded-xl;
+      background: rgb(126, 11, 148);
+      background: rgb(128, 105, 239);
+      background: linear-gradient(
+        180deg,
+        rgba(128, 105, 239, 1) 0%,
+        rgba(133, 89, 203, 1) 100%
+      ); */
+    }
+    > .first {
+      @apply rounded-t-xl rounded-b-md xl:max-w-[500px] lg:max-w-[400px] max-w-[270px];
+    }
+    > .middle {
+      @apply rounded-md xl:max-w-[500px] lg:max-w-[400px] max-w-[270px];
+    }
+    > .last {
+      @apply rounded-b-xl rounded-t-md xl:max-w-[500px] lg:max-w-[400px] max-w-[270px];
+    }
+  }
+}
+.userMessagePosition {
+  @apply ml-auto;
+}

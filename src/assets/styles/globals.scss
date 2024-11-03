@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-bgChat text-white;
+  height: 100vh;
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+  scrollbar-arrow-color: transparent transparent;
+}
+
+input:focus {
+  @apply bg-transparent border-[2px] border-accent !important;
+}
+.custom-skeleton .ant-skeleton-content .ant-skeleton-title {
+  @apply rounded-xl;
+  background-color: #1b2332;
+}
+.custom-skeleton .ant-skeleton-content .ant-skeleton-paragraph {
+  @apply rounded-xl w-[70%];
+  margin-block-start: 15px !important;
+  background-color: #1b2332;
+}
+
+.custom-skeleton .ant-skeleton-header .ant-skeleton-avatar {
+  @apply w-[50px] h-[50px] mt-2;
+  background-color: #1b2332;
+}

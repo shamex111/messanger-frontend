@@ -1,0 +1,24 @@
+.wrapper{
+    @apply flex justify-between px-8 border-b-2 border-b-border bg-main h-[60px];
+}
+.leftBar{
+    @apply flex my-auto;
+    > div{
+        @apply flex flex-col my-auto ml-3;
+        >h3{
+            @apply font-medium my-0;
+        }
+        > p{
+            @apply text-sm text-gray font-normal
+        }
+    }
+}
+.rightBar{
+    @apply flex my-auto gap-4;
+    .active {
+        @apply bg-gray bg-opacity-40 border-none hover:bg-gray hover:bg-opacity-40
+    }
+    > div{
+        @apply w-[40px] h-[40px] flex justify-center  rounded-full border-border border-2 cursor-pointer hover:bg-gray hover:bg-opacity-20 hover:border-none;
+    }
+}

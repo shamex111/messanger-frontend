@@ -1,0 +1,19 @@
+.field {
+  @apply text-left;
+
+  > label {
+    .input {
+      @apply flex  lg:h-[68px] h-[40px] w-full bg-transparent border-[2px] rounded-[10px] border-border px-1 py-2 text-sm focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50;
+    }
+  }
+}
+
+.inputInfo {
+  @apply flex justify-between mb-0;
+  > .error {
+    @apply text-red-500 text-xs sm:text-sm mb-0 h-fit;
+  }
+  > span {
+    @apply text-gray;
+  }
+}

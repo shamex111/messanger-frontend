@@ -1,0 +1,19 @@
+.wrapper {
+  @apply flex h-[71px] pt-4;
+}
+.burgerMenu {
+  @apply my-auto ml-[25px];
+}
+
+.topSideBarSettings {
+  @apply flex my-auto mb-4 ml-[30px] justify-between w-full mr-[40px] select-none;
+  h2 {
+    @apply text-lg font-semibold ;
+  }
+}
+.topSideBarEdit {
+  @apply flex my-auto ml-[30px] justify-between w-full mr-[40px];
+  h2 {
+    @apply text-lg font-semibold;
+  }
+}

@@ -1,0 +1,7 @@
+.sideBarWrapper {
+  @apply xl:max-h-[100vh] h-max border-r-border border-r-[2px] bg-main duration-[300ms] xl:w-[370px] lg:w-[300px] w-[300px];
+  /* @apply xl:max-h-[100vh]  h-max border-r-border border-r-[2px] bg-secondary duration-[300ms] xl:w-[370px] lg:w-[300px] w-[300px]; */
+}
+.styles {
+  @apply h-10;
+}
